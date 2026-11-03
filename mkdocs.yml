@@ -1,0 +1,90 @@
+site_name: Wiki PepsRO
+site_description: Guia oficial do PepsRO, servidor privado de Ragnarok Online (Renovação, rAthena)
+site_url: https://tiopeps.github.io/PepsRo-Wiki/
+repo_url: https://github.com/tioPeps/PepsRo-Wiki
+repo_name: tioPeps/PepsRo-Wiki
+edit_uri: ""
+copyright: PepsRO, servidor privado sem fins lucrativos. Ragnarok Online é marca da Gravity.
+
+theme:
+  name: material
+  language: pt-BR
+  palette:
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Mudar para o modo claro
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Mudar para o modo escuro
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: material/sword-cross
+    repo: fontawesome/brands/github
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+
+extra_css:
+  - stylesheets/pepsro.css
+
+plugins:
+  - search:
+      lang: pt
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Início: index.md
+  - Começar:
+      - comecar/index.md
+      - Instalação e patcher: comecar/instalacao.md
+      - Regras: comecar/regras.md
+  - Servidor:
+      - Rates: servidor/rates.md
+      - Mecânicas alteradas: servidor/mecanicas.md
+  - Classes:
+      - classes/index.md
+      - Builds: classes/builds.md
+  - Sistemas:
+      - sistemas/index.md
+  - Conteúdo:
+      - conteudo/index.md
+  - Eventos:
+      - eventos/index.md
+  - Database:
+      - database/index.md
+  - Ajuda:
+      - Comandos: comandos.md
+      - FAQ: faq.md

@@ -1,0 +1,126 @@
+/* Identidade visual do PepsRO
+   Verde dominante, preto como base, vermelho para alertas e azul para links.
+   Só alterar a pedido do usuário. */
+
+:root {
+  --pepsro-verde: #2fbf5a;
+  --pepsro-verde-claro: #5fe08a;
+  --pepsro-verde-escuro: #1d8a3e;
+  --pepsro-preto: #0b0e0c;
+  --pepsro-preto-2: #131815;
+  --pepsro-preto-3: #1b221d;
+  --pepsro-vermelho: #e5484d;
+  --pepsro-azul: #3b9eff;
+  --pepsro-azul-claro: #70b8ff;
+}
+
+/* Cores do tema (valem nos dois modos) */
+[data-md-color-primary="custom"] {
+  --md-primary-fg-color: var(--pepsro-verde-escuro);
+  --md-primary-fg-color--light: var(--pepsro-verde);
+  --md-primary-fg-color--dark: var(--pepsro-verde-escuro);
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #ffffffb3;
+}
+
+[data-md-color-accent="custom"] {
+  --md-accent-fg-color: var(--pepsro-verde-claro);
+  --md-accent-fg-color--transparent: #2fbf5a1a;
+}
+
+/* Modo escuro: base preta */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: var(--pepsro-preto);
+  --md-default-fg-color--lightest: #ffffff14;
+  --md-code-bg-color: var(--pepsro-preto-3);
+  --md-footer-bg-color: var(--pepsro-preto-2);
+  --md-footer-bg-color--dark: var(--pepsro-preto);
+  --md-typeset-a-color: var(--pepsro-azul-claro);
+}
+
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs {
+  background-color: var(--pepsro-preto-2);
+  border-bottom: 2px solid var(--pepsro-verde);
+}
+
+[data-md-color-scheme="slate"] .md-header__title,
+[data-md-color-scheme="slate"] .md-tabs__link--active {
+  color: var(--pepsro-verde-claro);
+}
+
+/* Modo claro */
+[data-md-color-scheme="default"] {
+  --md-typeset-a-color: #0d74ce;
+}
+
+/* Links em azul */
+.md-typeset a:hover {
+  color: var(--pepsro-azul);
+}
+
+/* Títulos em verde */
+.md-typeset h1,
+.md-typeset h2 {
+  color: var(--pepsro-verde);
+}
+
+/* Alertas em vermelho */
+.md-typeset .admonition.danger,
+.md-typeset details.danger,
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-color: var(--pepsro-vermelho);
+}
+
+.md-typeset .danger > .admonition-title,
+.md-typeset .danger > summary,
+.md-typeset .warning > .admonition-title,
+.md-typeset .warning > summary {
+  background-color: #e5484d1f;
+}
+
+.md-typeset .danger > .admonition-title::before,
+.md-typeset .danger > summary::before,
+.md-typeset .warning > .admonition-title::before,
+.md-typeset .warning > summary::before {
+  background-color: var(--pepsro-vermelho);
+}
+
+/* Informação em verde */
+.md-typeset .admonition.tip,
+.md-typeset details.tip,
+.md-typeset .admonition.success,
+.md-typeset details.success {
+  border-color: var(--pepsro-verde);
+}
+
+/* Tabelas: cabeçalho verde e rolagem no celular */
+.md-typeset table:not([class]) th {
+  background-color: var(--pepsro-verde-escuro);
+  color: #ffffff;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:nth-child(even) {
+  background-color: var(--pepsro-preto-2);
+}
+
+.md-typeset__table {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+/* Cartões da página inicial */
+.md-typeset .grid.cards > ul > li {
+  border-color: var(--pepsro-preto-3);
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--pepsro-verde);
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset {
+    font-size: 0.8rem;
+  }
+}

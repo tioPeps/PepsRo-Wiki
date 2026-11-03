@@ -1,0 +1,31 @@
+# {{ m.nome }}
+
+<!-- Página gerada por scripts/gerar.py. Não editar à mão: mude o template ou o script. -->
+
+| | |
+|---|---|
+| **ID** | {{ m.id }} |
+| **Nível** | {{ m.nivel }} |
+| **HP** | {{ m.hp }} |
+| **Raça** | {{ m.raca }} |
+| **Elemento** | {{ m.elemento }} {{ m.elemento_nivel }} |
+| **Tamanho** | {{ m.tamanho }} |
+| **EXP de base / classe** | {{ m.exp_base }} / {{ m.exp_classe }} |
+{% if m.mvp %}| **MVP** | Sim |
+{% endif %}
+
+## Drops
+
+Chances já com as rates do PepsRO.
+
+| Item | Chance |
+|---|---|
+{% for d in m.drops %}| {{ d.item }} | {{ d.chance }} |
+{% endfor %}
+
+## Onde encontrar
+
+| Mapa | Quantidade | Renascimento |
+|---|---|---|
+{% for s in m.spawns %}| {{ s.mapa }} | {{ s.quantidade }} | {{ s.renasce }} |
+{% endfor %}
