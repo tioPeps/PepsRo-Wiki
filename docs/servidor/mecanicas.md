@@ -46,7 +46,7 @@ As taxas de EXP e drop estão em [Rates](rates.md).
 ## MVPs
 
 - **Os 65 MVPs clássicos recebem 100% do dano.** No Ragnarok oficial atual eles recebem só 10%. Invocações, bonecos de treino e chefes de instância continuam como no oficial.
-- **Os MVPs clássicos dos mapas renascem em 20 minutos.** Os MVPs mais novos (como Goblin King, Jungoliant, Corrupted Spider Queen, Corrupted Dark Lord, Rigid Muspellskoll, Spider Chariot, The One, Death Witch, Burning Fang e R001-Bestia) mantêm o tempo oficial, de 1 a 6 horas.
+- **Os MVPs clássicos dos mapas renascem em 20 minutos.** Os tempos de todos os MVPs estão em [MVPs](../conteudo/mvps.md#renascimento).
 
 ## Habilidades
 

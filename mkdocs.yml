@@ -79,8 +79,20 @@ nav:
       - Builds: classes/builds.md
   - Sistemas:
       - sistemas/index.md
+      - Chefênia: sistemas/chefenia.md
+      - Lojas e Encantador: sistemas/lojas-chefenia.md
+      - Chapeleiro: sistemas/chapeleiro.md
+      - Combinação e pergaminhos: sistemas/combinacao.md
+      - Refino e cartas: sistemas/refino.md
+      - Equipamentos grátis: sistemas/equipamentos-gratis.md
+      - Serviços de Prontera: sistemas/servicos.md
   - Conteúdo:
       - conteudo/index.md
+      - Instâncias: conteudo/instancias.md
+      - Edda do Biolaboratório: conteudo/edda-biolab.md
+      - Ilusão do Labirinto: conteudo/ilusao-labirinto.md
+      - Além do Limite: conteudo/alem-do-limite.md
+      - MVPs: conteudo/mvps.md
   - Eventos:
       - eventos/index.md
   - Database:
