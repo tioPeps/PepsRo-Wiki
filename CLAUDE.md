@@ -20,6 +20,8 @@ Wiki do **PepsRO**, servidor privado de Ragnarok Online (**Renovação**, rAthen
 - Todo o conteúdo vem dos arquivos do PepsRO: item_db, mob_db, skill_db, drops, rates, configs e NPCs próprios (`npc/custom/pepsro`).
 - **Não usar o KawaRO como referência para nada**: nem estrutura, nem estilo, nem textos, números ou sistemas.
 - Informação que não está nos arquivos: **não inventar**. Marcar a página ou o trecho como "A preencher" (modelo abaixo) e perguntar ao usuário.
+- O `src\` da produção está desatualizado (o publicar só copia `npc`, `db`, `conf` e os `.exe`). Para saber o que o código faz, ler o `src\` da homologação **só se** o `map-server.exe` dos dois tiver o mesmo hash (`md5sum`).
+- Ao ler arquivos de `conf/import`, filtrar fora as linhas com `pass`, `_pw`, `_id`, `user` e `ip`, para nenhuma senha aparecer nem na saída dos comandos.
 - **Nunca publicar** senhas, nada de `_segredos`, valores de senha do `conf/import`, IP do ZeroTier nem dados de contas de jogadores.
 
 ## O que pode ser editado
