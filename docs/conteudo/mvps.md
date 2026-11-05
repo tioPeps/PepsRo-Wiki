@@ -18,4 +18,4 @@
 | Chefênia Pesadelo | 2 minutos |
 
 !!! warning "A preencher"
-    Tempo de renascimento dos MVPs mais novos (Goblin King, Jungoliant, Corrupted Spider Queen, Corrupted Dark Lord, Rigid Muspellskoll, Spider Chariot, The One, Death Witch, Burning Fang, R001-Bestia e Limacina). Nos arquivos atuais da produção eles estão entre 1 e 6 horas.
+    Tempo de renascimento dos MVPs mais novos (Goblin King, Jungoliant, Corrupted Spider Queen, Corrupted Dark Lord, Rigid Muspellskoll, Spider Chariot, The One, Death Witch, Burning Fang, R001-Bestia e Limacina) e do Beelzebub. Nos arquivos atuais da produção eles estão entre 1 e 12 horas.
